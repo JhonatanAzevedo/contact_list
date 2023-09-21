@@ -25,19 +25,19 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
-      home: const CameraPage(),
+      home: const ContactPage(),
     );
   }
 }
 
-class CameraPage extends StatefulWidget {
-  const CameraPage({super.key});
+class ContactPage extends StatefulWidget {
+  const ContactPage({super.key});
 
   @override
-  State<CameraPage> createState() => _CameraPageState();
+  State<ContactPage> createState() => _ContactPageState();
 }
 
-class _CameraPageState extends State<CameraPage> {
+class _ContactPageState extends State<ContactPage> {
   final TextEditingController nameController = TextEditingController(text: "");
   ContactRepository contactRepository = ContactRepository();
   List<ContactModel> contacts = [];
